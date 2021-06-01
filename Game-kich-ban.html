@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game kịch bản</title>
+</head>
+<body>
+<!-- Thẻ HTML: Trong các thẻ HTML có thể khai báo 1 sự kiện là onclick -->
+<h1>Đây là Game Kịch Bản</h1>
+<button onclick="so_sanh_2_so()">So sánh 2 số</button> 
+<button onclick="tong_2_so()">Tính tổng 2 số</button>
+
+<!-- Câu lệnh thực thi -->
+<script>
+    // let chang_trai = 'Phúc';
+    // let chang_trai = prompt('Nhập tên chàng trai: ');
+    // let co_gai = prompt("Nhập tên cô gái");
+    // let dia_diem = 'BV Bạch Mai';
+    // let dieu_chang_trai_noi = "Chia tay đi!";
+
+    // document.write(chang_trai + " gặp " + co_gai+ " tại " + dia_diem);
+    // document.write("<br>");
+    // document.write(chang_trai+ " nói "+ dieu_chang_trai_noi);
+
+    // 4+2 = 6;
+    // '4' + '2' = '42';
+
+    function tong_2_so(){ //đưa tên tong_2_so() vào onclick
+        let a = prompt('Nhập số a');
+        let b = prompt('Nhập số b');
+        let c = Number(a)+Number(b);
+        alert(c);
+    }
+    
+
+    // Bài toán phương trình bậc nhất
+    let a = prompt('Nhập số a');
+    let b = prompt('Nhập số b');
+    let c = prompt('Nhập số c');
+    let x = (Number(c) - Number(b))/Number(a);
+    if(Number(a) == 0){ //true - đúng
+        document.write('a bang 0 nen la phuong trinh vo nghiem');
+        if(Number(b) == Number(c)){
+            document.write("Phuong trinh vo so nghiem");
+        }else{
+            document.write('Phuong trinh vo nghiem');
+        }
+    }else{ //Nếu không thì
+        document.write(d);
+    }
+
+    // Bài toán if-else điều kiện
+    let tu = prompt('Tu Info');
+
+    if(tu == 'handsome'){
+        document.write('Co nguoi yeu!');
+    }else{
+        document.write('Tim nguoi khac');
+    }
+
+    //Bài toán so sánh 2 số
+    function so_sanh_2_so(){
+        let a = prompt('Nhập số a');
+        let b = prompt('Nhập số b');
+        if(a == b){
+            document.write('a bằng b'); // hiển thị ra màn hình
+        }else{
+            alert(' a khác b'); // hiển thị hộp thoại
+        }
+    }
+    
+    
+
+</script>
+
+</body>
+</html>
+<!-- 
+    Viết code: mở thẻ script
+    document.write: câu lệnh in đoạn văn bản
+    let: khai báo biến
+    Biến là đại diện cho 1 giá trị.
+    Prompt: Nhập 1 giá trị vào từ hộp thoại
+    Chương trình máy tính bản chất là những dòng lệnh chạy lần lượt (tuần tự)
+    a+b=c
+    //: comment lại dòng lệnh để nó không thực thi -> ctrl + /
+    Number: Đưa ký tự về dạng số để tính toán
+
+    Cấu trúc điều kiện: kiểm tra điều đáp ứng
+    == : Toán tử so sánh bằng
+
+    Luồng thực thi của chương trình: Thực thi tuần tự từ trên xuống dưới
+    Biến: đại diện cho 1 giá trị
+    Cấu trúc điều kiện:(if-else): Thực thi theo kịch bản là Nếu...Thì...Không thì
+
+    Vd if(điều kiện ( == )) { //điều kiện đúng
+        // thì làm gì
+    }else{ //khi điều kiện sai thì làm gì
+        // thì làm gì
+    }
+
+    function: đóng gói lại đoạn câu lệnh, khi nào cần mới gọi
+    document.write sẽ xoá hết các html khi thực thi
+ -->
